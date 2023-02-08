@@ -1,3 +1,5 @@
 #Fig and Pics
 *.jpg
 *.fig
+#Don't add asv files
+*.asv
