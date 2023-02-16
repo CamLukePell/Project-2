@@ -1,4 +1,4 @@
-function [] = Spec(speech_data)
+function [] = Spec(speech_data,Name)
     window = hamming(512);
     N_overlap = 256;
     N_fft = 1024;
@@ -11,5 +11,6 @@ function [] = Spec(speech_data)
     set(gca,'clim',[-80,20]);
     ylim([0 8000])
     xlabel('Time (s)');ylabel('Frequency (Hz)')
+    title(Name)
 end
 
