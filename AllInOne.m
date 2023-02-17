@@ -17,7 +17,6 @@ function [] = AllInOne()
     audiowrite("team9-filteredspeechsine.wav" ,filtered,44100)
     Spec(filtered,"Filter Combined")
     steroAudio = createStereo(fox,freqSample);
-    sound(steroAudio,44100);
     audiowrite("team9-stereospeechsine.wav" ,steroAudio,44100)
 end
 
