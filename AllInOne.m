@@ -1,4 +1,5 @@
-function [] = AllInOne(fs)
+function [] = AllInOne()
+    fs = 44100;
     freqSample = CreateSineWave(fs,5000);
     audiowrite("team9-sinetone.wav",freqSample,fs);
     Spec(freqSample,"5000Hz");
